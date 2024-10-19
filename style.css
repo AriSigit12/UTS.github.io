@@ -1,0 +1,193 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Latar belakang untuk keseluruhan halaman dengan slideshow */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    animation: slide 20s infinite; /* Animasi slideshow */
+}
+
+/* Animasi slideshow */
+@keyframes slide {
+    0% {
+        background: url('ronaldo1.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    25% {
+        background: url('ronaldo2.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    50% {
+        background: url('ronaldo3.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    75% {
+        background: url('ronaldo4.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    100% {
+        background: url('ronaldo5.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+/* Style untuk header */
+header {
+    background-color: rgba(218, 223, 228, 0.8); /* Tambahkan transparansi */
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    max-width: 150px;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-link {
+    margin: 0 15px;
+}
+
+/* Konten utama */
+main {
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang putih semi-transparan untuk konten */
+    padding: 20px;
+    border-radius: 8px; /* Menambahkan sudut melengkung */
+}
+
+/* Gaya umum untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Gaya untuk header tabel */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Gaya untuk header tabel */
+th {
+    background-color: #f2f2f2;
+}
+
+/* Gaya untuk baris genap */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Gaya untuk efek hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsif: menyembunyikan kolom tertentu pada layar kecil */
+@media (max-width: 768px) {
+    th:nth-child(3), td:nth-child(3) { /* Ganti dengan nomor kolom yang ingin disembunyikan */
+        display: none;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(85, 135, 186, 0.8); /* Tambahkan transparansi */
+    text-align: center;
+}
+
+/* Bayangan Teks */
+h1, h2, h3, p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Menambahkan bayangan pada teks */
+}
+
+/* Responsivitas */
+@media (max-width: 576px) {
+    .navbar-nav .nav-link {
+        margin: 0 5px;
+    }
+}
+
+/* Responsif */
+@media (max-width: 576px) {
+    .logo {
+        width: 80%; /* Ukuran logo pada layar kecil */
+    }
+
+    header, footer {
+        padding: 10px; /* Padding pada header dan footer untuk layar kecil */
+    }
+}
+
+@media (min-width: 576px) {
+    .logo {
+        width: 50%; /* Ukuran logo pada layar lebih besar */
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 30%; /* Ukuran logo pada layar lebih besar */
+    }
+}
+
+@media (min-width: 992px) {
+    .logo {
+        width: 20%; /* Ukuran logo pada layar sangat besar */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Menengahkan link navbar pada layar kecil */
+    }
+
+    .sidebar {
+        margin-top: 20px; /* Jarak atas sidebar */
+    }
+}
+
+.social-icons {
+    margin-top: 10px; /* Jarak antara teks dan ikon */
+}
+
+.social-icon {
+    width: 30px; /* Ukuran ikon */
+    height: 30px; /* Ukuran ikon */
+    margin: 0 10px; /* Jarak antar ikon */
+    transition: transform 0.2s; /* Animasi saat hover */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Efek zoom saat hover */
+}
+
+.logo {
+    width: 150px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: auto; /* Menjaga proporsi logo */
+}
+
+nav {
+    margin-bottom: 20px; /* Jarak antara navbar dan konten utama */
+}
+
+
+.hidden {
+     display: none;
+        
+}
+

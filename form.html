@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
+    <title>Formulir - Idola Saya</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Formulir Penggemar Cristiano Ronaldo</h1>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Halaman Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Halaman Formulir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Halaman Tabel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="row">
+            <main class="col-md-12">
+                <form id="visitorForm" class="my-4">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal Lahir:</label>
+                        <input type="date" id="tanggal" name="tanggal" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Jenis Kelamin:</label><br>
+                        <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+                        <input type="radio" name="gender" value="Perempuan" required> Perempuan
+                    </div>
+                    <div class="form-group">
+                        <label for="minat">Minat:</label><br>
+                        <input type="checkbox" name="minat" value="Sepak Bola"> Sepak Bola
+                        <input type="checkbox" name="minat" value="Olahraga Lain"> Olahraga Lain
+                    </div>
+                    <button type="submit" class="btn btn-primary">Kirim</button>
+                </form>
+            </main>
+        </div>
+        
+        <footer class="text-center my-4">
+            <p>&copy; 2024 Cristiano Ronaldo Fan Page</p>
+        </footer>
+    </div>
+
+    <script>
+        // Menangani pengiriman formulir
+        document.getElementById('visitorForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah pengiriman formulir default
+
+            // Mengambil data dari formulir
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const minat = Array.from(document.querySelectorAll('input[name="minat"]:checked')).map(el => el.value).join(', ');
+
+            // Simpan data ke Local Storage
+            const data = {
+                nama,
+                email,
+                tanggal,
+                gender,
+                minat
+            };
+
+            const visitorData = JSON.parse(localStorage.getItem('visitorData')) || [];
+            visitorData.push(data);
+            localStorage.setItem('visitorData', JSON.stringify(visitorData));
+
+            // Mengosongkan formulir setelah pengiriman
+            this.reset();
+            alert("Data berhasil dikirim!");
+        });
+    </script>
+</body>
+</html>

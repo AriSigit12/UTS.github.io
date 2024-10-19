@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
+    <title>Tabel - Idola Saya</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
+        }
+        tr:hover {
+            background-color: #ddd; /* Efek saat baris disorot */
+        }
+        thead th {
+            position: sticky; /* Membuat header tetap */
+            top: 0;
+            background-color: #fff; /* Warna latar belakang header */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>Data Penggemar Cristiano Ronaldo</h1>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Halaman Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Halaman Formulir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Halaman Tabel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="row">
+            <main class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Email</th>
+                            <th>Tanggal Lahir</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Minat</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTable">
+                        <tr><td>Ari Sigit</td><td>ari.sigit@example.com</td><td>1995-05-01</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Rina Dewi</td><td>rina.dewi@example.com</td><td>1996-06-12</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Budi Santoso</td><td>budi.santoso@example.com</td><td>1994-07-23</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Sari Utami</td><td>sari.utami@example.com</td><td>1993-08-15</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Andi Prasetyo</td><td>andi.prasetyo@example.com</td><td>1992-09-30</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Devi Rahayu</td><td>devi.rahyu@example.com</td><td>1990-10-10</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Joko Widodo</td><td>joko.widodo@example.com</td><td>1985-11-11</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Maya Sari</td><td>maya.sari@example.com</td><td>1998-12-01</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Rudi Hartono</td><td>rudi.hartono@example.com</td><td>1989-01-20</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Lisa Anindya</td><td>lisa.anindya@example.com</td><td>1997-02-18</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Yudi Setiawan</td><td>yudi.setiawan@example.com</td><td>1991-03-05</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Fitriani</td><td>fitriani@example.com</td><td>1988-04-21</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Deni Rahmat</td><td>deni.rahmat@example.com</td><td>1987-05-15</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Rina Kurnia</td><td>rina.kurnia@example.com</td><td>1995-06-30</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Tommy Arif</td><td>tommy.arif@example.com</td><td>1996-07-25</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Rani Setyowati</td><td>rani.setyowati@example.com</td><td>1992-08-14</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Faisal Akbar</td><td>faisal.akbar@example.com</td><td>1989-09-10</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Intan Permatasari</td><td>intan.permatasari@example.com</td><td>1990-10-28</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Rizky Saputra</td><td>rizky.saputra@example.com</td><td>1993-11-02</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Vina Puspita</td><td>vina.puspita@example.com</td><td>1995-12-22</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Dimas Anwar</td><td>dimas.anwar@example.com</td><td>1986-01-19</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Wati Lestari</td><td>wati.lestari@example.com</td><td>1997-02-15</td><td>Perempuan</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Ali Akbar</td><td>ali.akbar@example.com</td><td>1988-03-07</td><td>Laki-laki</td><td>Sepak Bola</td></tr>
+                        <tr><td>Rizal Putra</td><td>rizal.putra@example.com</td><td>1994-04-20</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Yani Sari</td><td>yani.sari@example.com</td><td>1991-05-15</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Muhammad Junaidi</td><td>junaidi@example.com</td><td>1992-06-10</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Fitria Agustina</td><td>fitria.agustina@example.com</td><td>1993-07-11</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Hendra Gunawan</td><td>hendra.gunawan@example.com</td><td>1990-08-05</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Siti Zainab</td><td>siti.zainab@example.com</td><td>1995-09-17</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Yusuf Abdullah</td><td>yusuf.abdullah@example.com</td><td>1994-10-01</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Adelia Rahmawati</td><td>adelia.rahmawati@example.com</td><td>1991-11-23</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Doni Firman</td><td>doni.firman@example.com</td><td>1992-12-15</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Fika Fitriani</td><td>fika.fitriani@example.com</td><td>1996-01-30</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Bagus Dwi</td><td>bagus.dwi@example.com</td><td>1995-02-22</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Intan Permata</td><td>intan.permata@example.com</td><td>1990-03-12</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Reza Kurnia</td><td>reza.kurnia@example.com</td><td>1989-04-07</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Elisa Nurul</td><td>elisa.nurul@example.com</td><td>1994-05-28</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Agus Rahmat</td><td>agus.rahmat@example.com</td><td>1991-06-19</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Vivi Lestari</td><td>vivi.lestari@example.com</td><td>1993-07-30</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Ferdian Alif</td><td>ferdian.alif@example.com</td><td>1990-08-25</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Rena Intan</td><td>rena.intan@example.com</td><td>1996-09-15</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Wawan Jaya</td><td>wawan.jaya@example.com</td><td>1988-10-10</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Nina Puspaningtyas</td><td>nina.puspaningtyas@example.com</td><td>1995-11-05</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Guntur Setiawan</td><td>guntur.setiawan@example.com</td><td>1992-12-20</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Lina Yuliana</td><td>lina.yuliana@example.com</td><td>1991-01-02</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Fahriansyah</td><td>fahriansyah@example.com</td><td>1993-02-28</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Rahmawati</td><td>rahmawati@example.com</td><td>1994-03-16</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Muhammad Rizki</td><td>rizki@example.com</td><td>1995-04-09</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+                        <tr><td>Dina Pratiwi</td><td>dina.pratiwi@example.com</td><td>1996-05-22</td><td>Perempuan</td><td>Sepak Bola</td></tr>
+                        <tr><td>Rizki Maulana</td><td>rizki.maulana@example.com</td><td>1994-06-03</td><td>Laki-laki</td><td>Olahraga Lainnya</td></tr>
+
+                        <!-- Data dari Local Storage akan ditambahkan di sini -->
+                    </tbody>
+                </table>
+            </main>
+        </div>
+        
+        <footer class="text-center my-4">
+            <p>&copy; 2024 Cristiano Ronaldo Fan Page</p>
+        </footer>
+    </div>
+
+    <script>
+        // Ambil data dari Local Storage dan tampilkan di tabel
+        window.onload = function() {
+            const visitorData = JSON.parse(localStorage.getItem('visitorData')) || [];
+            const dataTable = document.getElementById('dataTable');
+
+            visitorData.forEach(visitor => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${visitor.nama}</td>
+                    <td>${visitor.email}</td>
+                    <td>${visitor.tanggal}</td>
+                    <td>${visitor.gender}</td>
+                    <td>${visitor.minat}</td>
+                `;
+                dataTable.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>

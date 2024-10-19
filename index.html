@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link ke file CSS -->
+    <title>Cristiano Ronaldo Siuuuuu</title>
+    
+</head>
+<body>
+    <div class="container">
+        <header class="text-center my-4">
+            <img src="ronaldo_logo.jpg" alt="Logo Cristiano Ronaldo" class="logo"> <!-- Menambahkan logo -->
+            <h1 class="text-center">Selamat Datang di Website Penggemar Cristiano Ronaldo</h1>
+            <p itemprop="description">Ini adalah halaman yang didedikasikan untuk Cristiano Ronaldo, ikon sepak bola dunia!</p>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">CR7 Fan Page</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Halaman Utama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">Halaman Formulir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Halaman Tabel</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="row">
+            <aside class="col-md-3">
+                <h3>Menu</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="#" onclick="showSection('bio')">Biografi</a></li>
+                    <li class="list-group-item"><a href="#" onclick="showSection('achievements')">Pencapaian</a></li>
+                    <li class="list-group-item"><a href="#" onclick="showSection('interesting-facts')">Fakta Menarik</a></li>
+                </ul>
+            </aside>
+
+            <main class="col-md-9">
+                <h2 id="main-title" itemprop="headline">Cristiano Ronaldo</h2>
+                <div id="main-content">
+                    <p itemprop="description">Cristiano Ronaldo dos Santos Aveiro, lahir pada 5 Februari 1985, adalah seorang pemain sepak bola profesional asal Portugal yang saat ini bermain sebagai penyerang untuk klub Al Nassr dan tim nasional Portugal. Ronaldo dianggap sebagai salah satu pemain sepak bola terbaik sepanjang masa dan telah menerima banyak penghargaan, termasuk lima Ballon d'Or.</p>
+                    <p>Ronaldo memulai karirnya di Sporting CP sebelum bergabung dengan Manchester United, di mana ia meraih kesuksesan besar. Ia kemudian pindah ke Real Madrid, di mana ia menjadi pencetak gol terbanyak dalam sejarah klub dan memenangkan banyak gelar. Setelah itu, Ronaldo bermain untuk Juventus sebelum kembali ke Manchester United.</p>
+                    <p>Selain kesuksesannya di lapangan, Ronaldo juga dikenal karena keterlibatannya dalam berbagai kegiatan amal dan kemitraannya dengan merek-merek besar di seluruh dunia. Ia memiliki jutaan penggemar di seluruh dunia dan menjadi ikon olahraga global.</p>
+                </div>
+
+                <!-- Konten Dinamis -->
+                <div id="content" class="hidden">
+                    <div id="bio" class="hidden">
+                        <h3>Biografi</h3>
+                        <p>Cristiano Ronaldo dos Santos Aveiro lahir pada 5 Februari 1985, di Funchal, Madeira, Portugal. Ia adalah anak bungsu dari empat bersaudara dalam keluarga yang sederhana. Ronaldo menunjukkan bakat sepak bola sejak usia dini dan bergabung dengan klub lokal Andorinha. Pada usia 12 tahun, ia pindah ke Lisbon untuk bergabung dengan Sporting CP, di mana ia mengembangkan keterampilan sepak bolanya.</p>
+                        <p>Pada usia 16 tahun, Ronaldo menarik perhatian Manchester United setelah tampil mengesankan dalam pertandingan persahabatan. Ia bergabung dengan klub Inggris tersebut pada tahun 2003 dan segera menjadi salah satu pemain kunci. Selama waktu di Manchester United, Ronaldo meraih banyak gelar, termasuk tiga gelar Liga Premier Inggris dan Liga Champions UEFA 2008.</p>
+                        <p>Pada tahun 2009, ia pindah ke Real Madrid dengan rekor transfer dunia saat itu. Di Madrid, Ronaldo menjadi pencetak gol terbanyak sepanjang masa klub, memenangkan empat Ballon d'Or dan membantu klub meraih banyak gelar, termasuk empat Liga Champions UEFA.</p>
+                        <p>Setelah sukses di Real Madrid, Ronaldo bergabung dengan Juventus pada tahun 2018 dan terus menunjukkan performa luar biasa sebelum kembali ke Manchester United pada tahun 2021. Saat ini, Ronaldo bermain untuk klub Al Nassr di Arab Saudi.</p>
+                    </div>
+
+                    <div id="achievements" class="hidden">
+                        <h3>Pencapaian</h3>
+                        <ul>
+                            <li>5 kali meraih penghargaan Ballon d'Or (2008, 2013, 2014, 2016, 2017).</li>
+                            <li>Menjadi pencetak gol terbanyak dalam sejarah Liga Champions UEFA.</li>
+                            <li>Menang 7 gelar Liga Premier Inggris bersama Manchester United.</li>
+                            <li>Menang 2 gelar La Liga dan 4 gelar Liga Champions bersama Real Madrid.</li>
+                            <li>Menang 2 gelar Serie A bersama Juventus.</li>
+                            <li>Kapten tim nasional Portugal dan membawa timnya meraih trofi Euro 2016 dan UEFA Nations League 2019.</li>
+                            <li>Pencetak gol terbanyak dalam sejarah tim nasional Portugal.</li>
+                            <li>Pemenang penghargaan Pemain Terbaik Dunia FIFA.</li>
+                        </ul>
+                    </div>
+
+                    <div id="interesting-facts" class="hidden">
+                        <h3>Fakta Menarik Tentang Ronaldo:</h3>
+                        <ul>
+                            <li>Ronaldo memiliki rekor gol terbanyak di Liga Champions UEFA.</li>
+                            <li>Dia adalah kapten tim nasional Portugal dan telah membawa timnya meraih trofi Euro 2016.</li>
+                            <li>Ronaldo adalah duta besar untuk beberapa organisasi amal.</li>
+                            <li>Ia memiliki merek sendiri, CR7, yang mencakup pakaian, sepatu, dan parfum.</li>
+                            <li>Ronaldo dikenal karena etos kerja dan disiplin yang tinggi, menjadikannya contoh bagi banyak atlet muda.</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="text-center my-4">
+            <p>&copy; 2024 Cristiano Ronaldo Fan Page</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/cristiano/" target="_blank">
+                    <img src="logo_ig.jpg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://twitter.com/Cristiano" target="_blank">
+                    <img src="logo_x.png" alt="Twitter" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/Cristiano" target="_blank">
+                    <img src="logo-facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.youtube.com/user/cristiano" target="_blank">
+                    <img src="logo_youtube.png" alt="YouTube" class="social-icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Fungsi untuk menampilkan konten sesuai dengan pilihan
+        function showSection(section) {
+            // Sembunyikan konten utama dan judul
+            document.getElementById('main-content').classList.add('hidden');
+            document.getElementById('main-title').classList.add('hidden');
+
+            // Tampilkan konten dinamis
+            var contents = document.querySelectorAll('#content > div');
+            contents.forEach(function(content) {
+                content.classList.add('hidden');
+            });
+
+            // Tampilkan konten yang dipilih
+            document.getElementById(section).classList.remove('hidden');
+            document.getElementById('content').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
